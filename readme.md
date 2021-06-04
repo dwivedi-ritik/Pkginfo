@@ -5,6 +5,8 @@ This is node wrapper for getting package info in formated form.
 #### Installation
 
 `$ git clone https://github.com/dwivedi-ritik/Pkginfo.git`
+
+installing dependencies
 `$ cd Pkginfo && npm install`
 
 if you want to search repository from arch database
