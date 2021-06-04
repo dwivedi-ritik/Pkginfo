@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const chalkWriter = require("./formatOut");
+const { chalkWriter } = require("./formatOut");
 const { AutoComplete } = require("enquirer");
 
 //Dead link lol

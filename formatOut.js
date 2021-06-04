@@ -3,7 +3,7 @@ const chalk = require("chalk");
 //Function for formated output of arch Linux Respositery
 const chalkWriter = (el) => {
   let formatedPrinting = `
-    ${chalk.greenBright("PKG INFO")}\n
+    ${chalk.greenBright("PKG INFO(arch repositery)")}\n
     ${chalk.bold.cyanBright(el.pkgname)} (${chalk.greenBright(
     el.repo
   )}) ${chalk.cyanBright(el.pkgver)} \n
@@ -22,7 +22,7 @@ const chalkWriter = (el) => {
 
 const aurChalkWrite = (el) => {
   let formatedPrinting = `
-  ${chalk.greenBright("PKG INFO")}\n
+  ${chalk.greenBright("PKG INFO (arch user repositery)")}\n
   ${chalk.bold.cyanBright(el.Name)} (${chalk.cyanBright(el.Version)}) \n
   ${chalk.red("DESCRIPTION")}\n\t ${chalk.bold(el.Description)}\n
   ${chalk.bold.greenBright("==> ")} ${chalk.bold.cyanBright(el.URL)}\n\t
