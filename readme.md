@@ -1,16 +1,24 @@
-This is node wrapper for getting package info in formated form.
-
-![Alt text](img/ss0.png?raw=true "Title")
+This is node wrapper for getting package info of Arch and AUR in formated form.
 
 #### Installation
 
-`$ git clone https://github.com/dwivedi-ritik/Pkginfo.git`
-
-installing dependencies
-`$ cd Pkginfo && npm install`
+```shell
+$ git clone https://github.com/dwivedi-ritik/Pkginfo.git
+$ cd Pkginfo && npm install
+```
 
 if you want to search repository from arch database
-`$ node pkg.js`
+
+```shell
+$ node pkg.js`
+```
 
 if you want to search from arch user repository
+
+```shell
 `$ node aurPkg.js`
+```
+
+#### Screenshot
+
+![Alt text](img/ss0.png?raw=true "Title")
