@@ -10,13 +10,13 @@ $ cd Pkginfo && npm install
 if you want to search repository from arch database
 
 ```shell
-$ node pkg.js`
+$ node pkg.js
 ```
 
 if you want to search from arch user repository
 
 ```shell
-`$ node aurPkg.js`
+$ node aurPkg.js
 ```
 
 #### Screenshot
