@@ -7,17 +7,15 @@ $ git clone https://github.com/dwivedi-ritik/Pkginfo.git
 $ cd Pkginfo && npm install
 ```
 
-if you want to search repository from arch database
+try
 
 ```shell
-$ node pkg.js
+$ node pkginfo.js -h
 ```
 
-if you want to search from arch user repository
+use `node pkginfo.js --arch` for finding arch linux packages.
 
-```shell
-$ node aurPkg.js
-```
+use `node pkginfo.js --aur` for finding arch user packages.
 
 #### Screenshot
 
