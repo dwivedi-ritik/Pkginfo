@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.1",
-    "enquirer": "^2.3.6"
+    "enquirer": "^2.3.6",
+    "yargs": "^17.0.1"
   }
 }

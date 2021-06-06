@@ -1,3 +1,5 @@
 node_modules
 debug.js
 package-lock.json
+pkg.js
+.gitignore
