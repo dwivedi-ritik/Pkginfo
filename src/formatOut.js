@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const chalk = require("chalk");
 
 //Function for formated output of arch Linux Respositery

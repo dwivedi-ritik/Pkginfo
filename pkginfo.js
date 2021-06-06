@@ -1,4 +1,6 @@
-const { archUserRepo, archRepo } = require("./finder");
+#!/usr/bin/node
+
+const { archUserRepo, archRepo } = require("./src/finder");
 
 var argv = require("yargs/yargs")(process.argv.slice(2))
   .help("h")
