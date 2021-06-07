@@ -54,7 +54,7 @@ const usrInteract = (res, tempObj, aur) => {
 
     prompt.run().then((ret) => {
       res.forEach((el) => {
-        if (el.Name === ret) {
+        if (el.Name === ret || el.pkgname === ret) {
           aur ? aurChalkWrite(el) : chalkWriter(el);
         }
       });
