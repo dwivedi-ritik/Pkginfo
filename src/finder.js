@@ -5,10 +5,13 @@ const chalk = require("chalk");
 const { Select } = require("enquirer");
 const { aurChalkWrite, chalkWriter } = require("./formatOut");
 
-const readline = require("readline").createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const rdInterface = () => {
+  const rd = require("readline").createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  return rd;
+};
 
 //Function for retriving packages from arch user repositery
 const aurRetriver = async (query) => {
@@ -52,7 +55,6 @@ const usrInteract = (res, tempObj, aur) => {
     prompt.run().then((ret) => {
       res.forEach((el) => {
         if (el.Name === ret) {
-          console.log(type);
           aur ? aurChalkWrite(el) : chalkWriter(el);
         }
       });
@@ -64,6 +66,7 @@ const usrInteract = (res, tempObj, aur) => {
 
 //Function for retriving package info from arch user repositery
 const archUserRepo = () => {
+  const readline = rdInterface();
   readline.question(chalk.bold("PKG NAME ==> "), async (pkg) => {
     let res = await aurRetriver(pkg);
     let tempObj = new Array();
@@ -76,6 +79,7 @@ const archUserRepo = () => {
 };
 
 const archRepo = () => {
+  const readline = rdInterface();
   readline.question(chalk.bold("PKG NAME ==> "), async (pkg) => {
     let res = await retriver(pkg);
     let tempObj = new Array();
