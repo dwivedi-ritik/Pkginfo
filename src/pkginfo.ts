@@ -1,4 +1,4 @@
-const { archUserRepo, archRepo } = require("./src/findPkgs.ts");
+const { archUserRepo, archRepo } = require("./findPkgs");
 
 var argv = require("yargs/yargs")(process.argv.slice(2))
   .help("h")
