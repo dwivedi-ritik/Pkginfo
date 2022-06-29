@@ -1,21 +1,21 @@
-This is node wrapper for getting package info of Arch and AUR in formated form.
+This is node wrapper written in typescript for getting information of packages in Arch and Arch user repositery.
 
 #### Installation
 
 ```shell
 $ git clone https://github.com/dwivedi-ritik/Pkginfo.git
-$ cd Pkginfo && npm install
+$ tsc -p .
 ```
 
 try
 
 ```shell
-$ node pkginfo.js -h
+$ node ./dist/pkginfo.js -h
 ```
 
-use `node pkginfo.js --arch` for finding arch linux packages.
+use `node ./dist/pkginfo.js --arch` for finding arch linux packages.
 
-use `node pkginfo.js --aur` for finding arch user packages.
+use `node ./dist/pkginfo.js --aur` for finding arch user packages.
 
 #### Screenshot
 
